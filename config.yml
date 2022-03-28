@@ -7,15 +7,15 @@ users:
   #单个用户配置
   - user:
       #username 学号或者工号
-      username: '161105024'
+      username: '203190126'
       #password 密码
-      password: '161105024'
+      password: 'Syy105912'
       #address 地址，定位信息
-      address: 中国四川省成都市金牛区一环路北1段-129号-附9号
+      address: 中国江苏省南京市江宁区日晖路
       #email 接受通知消息的邮箱
-      email: 461009747@qq.com
+      email: 729528737@qq.com
       #school 学校全称
-      school: 宜宾学院
+      school: 南京工程学院
   #多用户配置，将下面的注释去掉即可，如果有表单内容有图片，不建议使用多用户配置
 #  - user:
 #      #username 学号或者工号
@@ -34,31 +34,67 @@ cpdaily:
     #表单默认选项配置，按顺序，注意，只有标必填项的才处理
     - default:
         #表单项类型，对应今日校园接口返回的fieldType字段，1代表文本，2代表单选，3代表多选，4代表图片
-        type: 2
+        type: 1
         #表单项标题
-        title: 本人是否接触过武汉（归来）人员
+        title: 联系方式
         #表单项默认值
+        value: 13812701780
+    - default:
+        type: 2
+        title: 学生住宿信息
+        value: 北9
+    - default:
+        type: 2
+        title: 新学期开学以来是否返校
+        value: 是
+    - default:
+        type: 2
+        title: 今日所在位置
+        value: 校内
+    - default:
+        type: 2
+        title: 是否处于南京市外中高风险地区
         value: 否
     - default:
         type: 2
-        title: 本人是否接触过新型冠状病毒患者
+        title: 近14天是否有南京市外中高风险地区旅居史
         value: 否
     - default:
         type: 2
-        title: 本人是否有新型冠状病毒类似病状
-        value: 否
+        title: 今日身体状况
+        value: 无以上状况 
     - default:
         type: 2
-        title: 本人隔离方式
-        value: 家庭自我隔离
+        title: 今日体温是否低于37.3℃
+        value: 是  
     - default:
         type: 2
-        title: 本人身体状况
-        value: 身体健康
+        title: 今日健康码
+        value: 绿码  
     - default:
         type: 2
-        title: 共同居住家属情况
-        value: 正常
+        title: 今日隔离情况
+        value: 未隔离   
+    - default:
+        type: 2
+        title: 今日疫苗接种情况
+        value: 未接种   
+    - default:
+        type: 2
+        title: 近14天是否与确认病例、疑似病例或者无症状感染者接触
+        value: 否   
+    - default:
+        type: 2
+        title: 共同居住人员身体状况
+        value: 无以上状况   
+    - default:
+        type: 2
+        title: 共同居住人员近14天是否有南京市外中高风险地区旅居史
+        value: 否   
+    - default:
+        type: 2
+        title: 今日是否核酸
+        value: 否     
 
 Info:
   ServerChan: # 填写Server酱的SCKEY
